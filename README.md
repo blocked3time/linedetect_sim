@@ -15,7 +15,7 @@ MINDISTANCE : 라인을 검출 할 때 이전 프레임에서 75픽셀 안에서
 
  ![image](https://github.com/user-attachments/assets/19395696-65a7-4fa1-ac72-621f7a1f5c74)
 
-함수 선언 및 VideoCapture,VideoWriter 객체를 선언한다. VideoWriter객체는 dstX 의 포트로 영상을 전송하거나 저장한다.
+객체 선언 및 VideoCapture,VideoWriter 객체를 선언한다. VideoWriter객체는 dstX 의 포트로 영상을 전송하거나 저장한다.
 
  ![image](https://github.com/user-attachments/assets/c48a2526-30e9-4091-b00c-68669fcf0171)
 
