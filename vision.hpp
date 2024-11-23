@@ -6,7 +6,7 @@
 
 void setFrame(cv::Mat& frame);
 
-void drawBoundingBox(cv::Mat& frame,cv::Mat labels,cv::Mat stats,cv::Mat centroids, int lable, int index);
+void drawBoundingBox(cv::Mat& frame,cv::Mat stats,cv::Mat centroids, int lable, int index);
 
 int findMinIndex(cv::Mat stats,cv::Mat centroids, int lable, cv::Point& po,int MINDISTANCE);
 
