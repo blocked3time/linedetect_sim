@@ -3,10 +3,10 @@
 using namespace cv;
 
 void setFrame(Mat& frame){
-		frame +=  Scalar(100,100,100) - mean(frame);
-		frame = frame(Rect(Point(0,frame.rows/4*3),Point(frame.cols,frame.rows)));
-        cvtColor(frame,frame,COLOR_RGB2GRAY);
-		threshold(frame, frame, 0, 255, THRESH_BINARY | THRESH_OTSU);
+	frame = frame(Rect(Point(0,frame.rows/4*3),Point(frame.cols,frame.rows)));  
+	cvtColor(frame,frame,COLOR_RGB2GRAY);
+	frame +=  Scalar(100) - mean(frame);
+	threshold(frame, frame, 0, 255, THRESH_BINARY | THRESH_OTSU);
 }
 
 void drawBoundingBox(Mat& frame,Mat stats,Mat centroids, int lable, int index){
