@@ -10,11 +10,12 @@ main :
 
  ![image](https://github.com/user-attachments/assets/d0c0ad50-a771-4135-8b0c-60d1e0231f22)
 
-필요한 라이브러리 및 using namespace,control + c 함수 , 자주 사용하는 상수를 디파인 해준다 .
+필요한 라이브러리 및 using namespace,control + c 함수 , 자주 사용하는 상수를 디파인 해준다.
+MINDISTANCE : 라인을 검출 할 때 이전 프레임에서 75픽셀 안에서 라인을 검출한 경우 라인으로 인식, ERR : 에러 보정값, RPM : 모터의 RPM값
 
  ![image](https://github.com/user-attachments/assets/19395696-65a7-4fa1-ac72-621f7a1f5c74)
 
-함수 선언 및 VideoCapture,VideoWriter 객체를 선언한다.
+함수 선언 및 VideoCapture,VideoWriter 객체를 선언한다. VideoWriter객체는 dstX 의 포트로 영상을 전송하거나 저장한다.
 
  ![image](https://github.com/user-attachments/assets/c48a2526-30e9-4091-b00c-68669fcf0171)
 
@@ -24,7 +25,7 @@ suorce 로부터 영상 frame을 얻은 후 원본 파일을 writer2로 전송�
 
 setFrame 함수는 밝기처리, gray영상으로 변환 후 이진화를 수행한다..
 
-![image](https://github.com/user-attachments/assets/227cb6da-d0b7-4f3f-8c0a-019686e00379)
+![image](https://github.com/user-attachments/assets/745de689-a31e-4194-af46-89bc56b18f22)
 
 connectedComponentsWithStats 함수를 통해 이미지의 통계 정보를 받는다 각 lables : 구성요소(코드에서 쓰이지 않음), stats : 출력으로 x,y위치 밑 width, heigh, 면적의 정보가 저장됨, centroids : 무게 중심
 
@@ -44,8 +45,11 @@ getErr함수로 err 값을 받는다. err 값을 RPM에 더하는 방식으로 l
 
 ![image](https://github.com/user-attachments/assets/16e94d9b-4523-4bb5-8536-510a8e548396)
 
-이후 처리된 이미지를 저장 및 전송한 후 측정된 err 값, lvel, rvel, 측정 시간의 정보를 약 0.03 Sec(30fps) 주기로 출력한다. control + c를 눌러 종료할 수 있다.
+이후 처리된 이미지를 저장 및 전송한 후 측정된 err 값, lvel, rvel, 측정 시간의 정보(TickMeter 객체 사용)를 약 0.03 Sec(30fps) 주기로 출력한다. control + c를 눌러 종료할 수 있다.
 
+Makefile
+
+![image](https://github.com/user-attachments/assets/2412f4a6-1001-40d2-a959-0cecefc5e814)
 
 
  
