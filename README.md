@@ -23,9 +23,10 @@ MINDISTANCE : 라인을 검출 할 때 이전 프레임에서 75픽셀 안에서
 
 suorce 로부터 영상 frame을 얻은 후 원본 파일을 writer2로 전송한다.
 
-setFrame 함수는 밝기처리, gray영상으로 변환 후 이진화를 수행한다..
+setFrame 프레임을 자른 후 함수는 밝기처리, gray영상으로 변환,이진화를 수행한다.
 
-![image](https://github.com/user-attachments/assets/745de689-a31e-4194-af46-89bc56b18f22)
+![image](https://github.com/user-attachments/assets/f231b193-e183-4983-a51e-f80583383549)
+
 
 connectedComponentsWithStats 함수를 통해 이미지의 통계 정보를 받는다 각 lables : 구성요소(코드에서 쓰이지 않음), stats : 출력으로 x,y위치 밑 width, heigh, 면적의 정보가 저장됨, centroids : 무게 중심
 
