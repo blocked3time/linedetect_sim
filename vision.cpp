@@ -3,15 +3,13 @@
 using namespace cv;
 
 void setFrame(Mat& frame){
-		if(frame.type() != CV_8UC3 ) return ;
 		frame +=  Scalar(100,100,100) - mean(frame);
 		frame = frame(Rect(Point(0,frame.rows/4*3),Point(frame.cols,frame.rows)));
         cvtColor(frame,frame,COLOR_RGB2GRAY);
-		threshold(frame, frame, 0, 255, cv::THRESH_BINARY | cv::THRESH_OTSU);
+		threshold(frame, frame, 0, 255, THRESH_BINARY | THRESH_OTSU);
 }
 
-void drawBoundingBox(Mat& frame,Mat labels,Mat stats,Mat centroids, int lable, int index){
-	if(frame.type() != CV_8U ) return ;
+void drawBoundingBox(Mat& frame,Mat stats,Mat centroids, int lable, int index){
 	cvtColor(frame, frame, COLOR_GRAY2BGR);
 	Scalar sc;
 	 for(int i = 1;i<lable;i++){
