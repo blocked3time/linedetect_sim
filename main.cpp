@@ -3,11 +3,12 @@
 #include <signal.h>
 #include "vision.hpp"  
 #include "opencv2/opencv.hpp"
-using namespace cv;
+
 #define MINDISTANCE 75
 #define ERR 4
 #define RPM 100
 using namespace std;
+using namespace cv;
 
 bool ctrl_c_pressed;
 void ctrlc(int)
@@ -67,14 +68,17 @@ udpsink host=192.168.0.35 port=8002 sync=false";
 		writer2<<frame;
 
 		setFrame(frame);
+
 		int lable =  connectedComponentsWithStats(frame, labels, stats, centroids);
 
 		static Point po = Point(frame.cols/2,frame.rows/2);
+
 		int index = findMinIndex(stats,centroids, lable,po, MINDISTANCE);
 		
-		drawBoundingBox(frame, labels,stats,centroids, lable, index);
+		drawBoundingBox(frame,stats,centroids, lable, index);
 
 		double lvel = RPM + getErr(frame, po, ERR), rvel = RPM*-1 + getErr(frame, po, ERR);
+		
 		writer1 <<frame; 
 		vw <<frame;
 		if (ctrl_c_pressed) break;
