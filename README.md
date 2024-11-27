@@ -1,6 +1,13 @@
 # linedetect_sim
 opencv라이브 러리를 사용한 라인 검출 알고리즘 
 
+시뮬레이션 유튜브 링크 
+
+https://www.youtube.com/watch?v=jRpWuQiiL0o&t=3s
+
+https://www.youtube.com/watch?v=GlLzvFEemKg
+
+
 헤더파일 :
 
 ![image](https://github.com/user-attachments/assets/26287b8a-4398-4d6f-ae4e-bdbc2736bb01)
