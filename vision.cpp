@@ -9,15 +9,18 @@ void setFrame(Mat& frame){
 	threshold(frame, frame, 0, 255, THRESH_BINARY | THRESH_OTSU);
 }
 
-void drawBoundingBox(Mat& frame,Mat stats,Mat centroids, int lable, int index){
+void drawBoundingBox(Mat& frame,Mat stats,Mat centroids, int lable, int index, Point po){
 	cvtColor(frame, frame, COLOR_GRAY2BGR);
 	Scalar sc;
 	 for(int i = 1;i<lable;i++){
 		if(i == index) sc = Scalar(0,0,255);
         else sc =stats.at<int>(i,4)<50 ? Scalar(0,255,255):Scalar(255,0,0);
-        rectangle(frame,Rect(stats.at<int>(i,0),stats.at<int>(i,1),stats.at<int>(i,2),stats.at<int>(i,3)),sc);
-        rectangle(frame,Rect(centroids.at<double>(i,0),centroids.at<double>(i,1),3,3),sc);
+        rectangle(frame,Rect(stats.at<int>(i,0),stats.at<int>(i,1),stats.at<int>(i,2),stats.at<int>(i,3)),sc,2);
+        rectangle(frame,Rect(centroids.at<double>(i,0),centroids.at<double>(i,1),3,3),sc,2);
         } 
+	if(index == 0){
+		 rectangle(frame,Rect(po.x,po.y,3,3),Scalar(0,0,255),2);
+	}
 }
 
 int findMinIndex(Mat stats,Mat centroids, int lable, Point& po,int MINDISTANCE){
@@ -36,6 +39,6 @@ int findMinIndex(Mat stats,Mat centroids, int lable, Point& po,int MINDISTANCE){
 	return index;
 }
 
-double getErr(Mat frame, Point po,int err){
-	return (frame.cols/2 -po.x)/err;
+double getErr(Mat frame, Point po,double gain){
+	return (frame.cols/2 -po.x)*gain;
 }
