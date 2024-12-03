@@ -53,7 +53,8 @@ findMinIndex함수는 connectedComponentsWithStats를 통해 찾은 이미지 �
 drawBoundingBox함수를 사용하여 바운딩 박스와 무게 중심을 그린다. 이전에 frame을 gray타입으로 변경 했음으로 BFR로 변경한다. findMinIndex로 찾은 index를 매개 변수로 받는다. 객체의 면적이 50 미만인 경우 노이즈로 간주한다.
 빨강 : 현재 따라가는 라인,  파랑 : 다른 라인, 노랑 : 노이즈
 
-![image](https://github.com/user-attachments/assets/aa11217d-ec40-470b-a156-935af608611b)
+![image](https://github.com/user-attachments/assets/da9c5c77-8430-4076-a331-5d9975c6a8d0)
+
 
 getErr함수로 err 값을 받는다. err 값을 RPM에 더하는 방식으로 lvel,rvel 값을 구한다.
 
