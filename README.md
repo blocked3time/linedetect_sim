@@ -36,6 +36,8 @@ setFrame 프레임을 자른 후 함수는 밝기처리, gray영상으로 변환
 
 시간을 측정하여 출력하고 30프레임을 유지한다
 
+'s' 를 입력하면 모터가 입력된 시뮬레이션 영상에 따라 동작한다
+
 ![image](https://github.com/user-attachments/assets/f231b193-e183-4983-a51e-f80583383549)
 
 
