@@ -15,7 +15,8 @@ https://www.youtube.com/watch?v=NguyBj4pO7M&ab_channel=%EC%A0%95%EC%9A%A9%EA%B7%
 코드 설명 : 
 main : 
 
- ![image](https://github.com/user-attachments/assets/d0c0ad50-a771-4135-8b0c-60d1e0231f22)
+![image](https://github.com/user-attachments/assets/b75787ec-2b64-455c-a204-6800cdc58819)
+
 
 필요한 라이브러리 및 using namespace,control + c 함수 , 자주 사용하는 상수를 디파인 해준다.
 MINDISTANCE : 라인을 검출 할 때 이전 프레임에서 75픽셀 안에서 라인을 검출한 경우 라인으로 인식, ERR : 에러 보정값, RPM : 모터의 RPM값
@@ -51,7 +52,8 @@ drawBoundingBox함수를 사용하여 바운딩 박스와 무게 중심을 그�
 
 getErr함수로 err 값을 받는다. err 값을 RPM에 더하는 방식으로 lvel,rvel 값을 구한다.
 
-![image](https://github.com/user-attachments/assets/16e94d9b-4523-4bb5-8536-510a8e548396)
+![image](https://github.com/user-attachments/assets/0f54f992-c86f-4b83-9a38-26d7c95a2bc2)
+
 
 이후 처리된 이미지를 저장 및 전송한 후 측정된 err 값, lvel, rvel, 측정 시간의 정보(TickMeter 객체 사용)를 약 0.03 Sec(30fps) 주기로 출력한다. control + c를 눌러 종료할 수 있다.
 
