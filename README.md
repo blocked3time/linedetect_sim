@@ -25,7 +25,8 @@ MINDISTANCE : 라인을 검출 할 때 이전 프레임에서 75픽셀 안에서
 
 필요한 변수, 객체 선언 및 VideoCapture,VideoWriter 객체를 선언한다. VideoWriter객체는 dstX 의 포트로 영상을 전송하거나 저장한다.
 
- ![image](https://github.com/user-attachments/assets/c48a2526-30e9-4091-b00c-68669fcf0171)
+![image](https://github.com/user-attachments/assets/8dfe3056-9bc5-4fba-9299-f2abe7fc46f2)
+
 
 함수 반복문 동영상이 끝나거나 control + c를 누를 때까지 반복한다.
 
