@@ -64,7 +64,8 @@ getErr함수로 err 값을 받는다. err 값을 RPM에 더하는 방식으로 l
 
 Makefile
 
-![image](https://github.com/user-attachments/assets/2412f4a6-1001-40d2-a959-0cecefc5e814)
+![image](https://github.com/user-attachments/assets/f958eca2-5bb7-41ca-bef7-da9191b814f9)
+
 
 
  
