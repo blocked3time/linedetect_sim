@@ -21,9 +21,9 @@ main :
 필요한 라이브러리 및 using namespace,control + c 함수 , 자주 사용하는 상수를 디파인 해준다.
 MINDISTANCE : 라인을 검출 할 때 이전 프레임에서 75픽셀 안에서 라인을 검출한 경우 라인으로 인식, ERR : 에러 보정값, RPM : 모터의 RPM값
 
- ![image](https://github.com/user-attachments/assets/19395696-65a7-4fa1-ac72-621f7a1f5c74)
+ ![image](https://github.com/user-attachments/assets/21343838-a86c-4e22-9e35-f7202cc951b6)
 
-객체 선언 및 VideoCapture,VideoWriter 객체를 선언한다. VideoWriter객체는 dstX 의 포트로 영상을 전송하거나 저장한다.
+필요한 변수, 객체 선언 및 VideoCapture,VideoWriter 객체를 선언한다. VideoWriter객체는 dstX 의 포트로 영상을 전송하거나 저장한다.
 
  ![image](https://github.com/user-attachments/assets/c48a2526-30e9-4091-b00c-68669fcf0171)
 
@@ -32,6 +32,8 @@ MINDISTANCE : 라인을 검출 할 때 이전 프레임에서 75픽셀 안에서
 suorce 로부터 영상 frame을 얻은 후 원본 파일을 writer2로 전송한다.
 
 setFrame 프레임을 자른 후 함수는 밝기처리, gray영상으로 변환,이진화를 수행한다.
+
+시간을 측정하여 출력하고 30프레임을 유지한다
 
 ![image](https://github.com/user-attachments/assets/f231b193-e183-4983-a51e-f80583383549)
 
