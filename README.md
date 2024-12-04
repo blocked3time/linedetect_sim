@@ -10,7 +10,8 @@ opencv라이브 러리를 사용한 라인 검출 알고리즘
 
 헤더파일 :
 
-![image](https://github.com/user-attachments/assets/26287b8a-4398-4d6f-ae4e-bdbc2736bb01)
+![image](https://github.com/user-attachments/assets/ab66812a-bdbe-46e9-878d-90107cc8685d)
+
 
 코드 설명 : 
 main : 
