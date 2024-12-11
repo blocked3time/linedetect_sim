@@ -3,13 +3,12 @@ opencv라이브 러리를 사용한 라인 검출 알고리즘
 
 시뮬레이션 유튜브 링크 
 
+![image](https://github.com/user-attachments/assets/c2359cc1-1123-412d-9560-f59dc733bb0d)
+
 [https://www.youtube.com/watch?v=NguyBj4pO7M&ab_channel=%EC%A0%95%EC%9A%A9%EA%B7%9C](https://www.youtube.com/watch?v=Tg5ywqx2TrY&ab_channel=%EC%A0%95%EC%9A%A9%EA%B7%9C)
 
 [https://www.youtube.com/watch?v=y6-Qxq8EI24&ab_channel=%EC%A0%95%EC%9A%A9%EA%B7%9C](https://www.youtube.com/watch?v=e0ugpriJ5DY&ab_channel=%EC%A0%95%EC%9A%A9%EA%B7%9C)
 
-https://www.youtube.com/watch?v=RZYVFkru_ac&ab_channel=%EC%A0%95%EC%9A%A9%EA%B7%9C
-
-https://www.youtube.com/watch?v=g123CKNEtks&ab_channel=%EC%A0%95%EC%9A%A9%EA%B7%9C
 
 
 헤더파일 :
