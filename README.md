@@ -1,6 +1,11 @@
 # linedetect_sim
 opencv라이브 러리를 사용한 라인 검출 알고리즘 
 
+블록도
+
+![image](https://github.com/user-attachments/assets/9eadeb6a-6a04-4ea4-b904-33a6ae710f2e)
+
+
 시뮬레이션 유튜브 링크 
 
 ![image](https://github.com/user-attachments/assets/c2359cc1-1123-412d-9560-f59dc733bb0d)
